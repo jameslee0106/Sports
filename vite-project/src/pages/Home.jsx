@@ -4,6 +4,9 @@ import Mariners from "../assets/Mariners.png"
 import Tottenham from "../assets/Tottenham.png"
 import Seahawks from "../assets/Seahawks.png"
 import '../App.css';
+import { Link } from "react-router-dom";
+
+
 
 
 export const Home = () => {
@@ -24,10 +27,18 @@ export const Home = () => {
     <div>
       <h1>James' Sports Hub</h1>
       <div class="sportsIcon">
+        <Link to="/nba">
         <img src={NBA} />
+        </Link>
+        <Link to="/mariners">
         <img src={Mariners} />
-        <img src={Tottenham} /> 
+        </Link>
+        <Link to="/tottenham">
+        <img src={Tottenham} />
+        </Link>
+        <Link to="/seahawks">
         <img src={Seahawks} />
+        </Link>
       </div>
       <div class="card">
         <button onClick={fetchPlayerData}>test</button>
